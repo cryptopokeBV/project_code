@@ -1,0 +1,275 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+
+/* Logo Font 
+
+*/
+
+header {
+    width: 100%;
+    background: linear-gradient(111deg, rgba(178,82,0,1) 0%, rgba(213,168,58,1) 42%, rgba(243,133,0,1) 82%);
+    position:fixed;
+    top: 0px;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.width1260 {
+    width: 1260px;
+}
+
+@media only screen and (max-width: 1259px) {
+    .width1260 {
+    width:100%;
+    }
+    .partners {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center !important;
+        gap: 1rem;
+    } 
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 600;
+}
+
+.logo a img {
+     vertical-align: middle;
+}
+
+.logo > * {
+    color: white;
+}
+
+
+nav ul {
+    list-style: none;
+    display: inline-flex;
+}
+
+nav ul li {
+    padding-left: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+nav ul > * > * {
+    color: white;
+}
+
+.banner {
+    background: url('/images/egg.png'), linear-gradient(111deg, rgba(178,82,0,1) 0%, rgba(213,168,58,1) 42%, rgba(243,133,0,1) 82%);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 37.5rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    box-shadow: 5px 5px 20px #6d6b6b6b;
+}
+
+.opacity {
+    background-color: hsla(0, 0%, 0%, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+        /* margin: 0 auto; */
+    margin: 2rem;
+    padding: 2rem;
+    width:75%;  
+    text-align: center;
+}
+
+.opacity > * {
+    color: white;
+}
+
+.opacity p {
+    text-align: justify;
+}
+
+.partners {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    max-height: 10rem;
+}
+
+#border {
+    border-top: 1px solid #b04e01;
+    border-bottom: 1px solid #5a5d60;
+    padding: 1rem;
+}
+
+.testimonials {
+    width: 100%;
+    background: #EDF2F8;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #5a5d60;
+}
+
+
+.t-grid {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+}
+.review0  {
+        grid-column:span 4;
+        grid-row: 1/2;
+        text-align: center;
+        margin-top: 1rem;
+}
+.review1 {
+        background: #733FC8;
+        grid-column: span 2;
+        grid-row: 2/3;
+        background-image: url(https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/bg-pattern-quotation.svg);
+        background-repeat: no-repeat;
+        background-position-x: 25rem;
+        color: hsl(0, 0%, 81%);
+    }
+
+.review1 > * > h4,
+.review2 > * > h4,
+.review5 > * > h4 {
+        font-size: 1.4rem;
+        color: #F3DEFF;
+        font-weight: 600;
+        line-height: 1.5;
+        margin-bottom: 0.8rem;
+    }
+
+    .review1 > * > p,
+    .review2 > * > p,
+    .review5 > * > p {
+        font-size: 0.95rem;
+        color: #F3DEFF;
+        font-weight: 300;
+        opacity: 50%;
+        line-height: 1.5;
+    }
+
+    .review3 > * > p,
+    .review4 > * > p {
+        font-size: 0.95rem;
+        color: #49505A;
+        font-weight: 300;
+        opacity: 50%;
+        line-height: 1.5;
+        
+    }
+
+    .review3 > * > h4,
+    .review4 > * > h4 {
+        font-size: 1.4rem;
+        color: #49505A;
+        font-weight: 600;
+        line-height: 1.5;
+        margin-bottom: 0.8rem;
+    }
+
+.review2 {
+    grid-column: span 1;
+    grid-row: 2/3;
+    background:#49556B;
+    color: hsl(0, 0%, 81%);
+}
+
+.review3 {
+    grid-column: span 1;
+    grid-row: 2/4;
+    background: white;
+    color: #49505A;
+}
+
+.review4 {
+    grid-column: span 1;
+    grid-row: 3/4;
+    background: white;
+    color: #49505A;
+}
+
+.review5 {
+    grid-column: span 2;
+    grid-row: 3/4;
+    background: #18202D;
+    color: hsl(0, 0%, 81%);
+}
+
+.t-roundbox {
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 5px 5px 20px #6d6b6b6b;
+}
+
+.userbar {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.userbar img {
+    max-height: 3rem;
+    border-radius: 50%;
+    border: 0.2rem solid gray;
+    margin-right: 1rem;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.fullname {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.job-position {
+    font-size: 0.75rem;
+    font-weight: 500;
+}
